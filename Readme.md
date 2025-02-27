@@ -8,7 +8,7 @@ Die Hauptfunktionen sind:
 - Berechnung der Rundlaufzeit mittels Kreuzkorrelation
 - Kalibrierung anhand von Messwerten (linearer Fit)
 - Abstandsanzeige mit realitätsnaher Fehlerabschätzung
-- Runden der Anzeige auf sinnvolle Werte (z. B. 5 cm Schritte für digitale Cockpitanzeige)
+- Runden der Anzeige auf sinnvolle Werte (5 cm Schritte für digitale Cockpitanzeige)
 
 ## 🔧 Installation
 
@@ -19,15 +19,10 @@ Stelle sicher, dass **Python 3.x** installiert ist. Installiere dann die benöti
 pip install -r requirements.txt
 ```
 
-Falls du noch keine `requirements.txt` hast, erstelle sie mit:
-```sh
-pip freeze > requirements.txt
-```
-
 ### 2. **Programm starten**
 Das Programm kann mit folgendem Befehl gestartet werden:
 ```sh
-python radar_gui.py
+python main.py
 ```
 
 ## 🎯 Nutzung
@@ -68,7 +63,7 @@ Spalten:
 
 ## 💡 Hinweise
 - Falls keine Kalibrierung vorliegt, wird die Schallgeschwindigkeit auf **343 m/s** gesetzt (Standardwert für Luft bei 20°C).
-- Falls ein gemessener Wert deutlich von der Erwartung abweicht (> 2× Literaturwert), wird er als Ausreißer erkannt und durch **343 m/s** ersetzt.
+- Falls ein gemessener Wert deutlich von der Erwartung abweicht (> 1,5× Literaturwert), wird er als Ausreißer erkannt und durch **343 m/s** ersetzt.
 - Falls die Zeitmessung als exakt angenommen wird, berechnet sich die Unsicherheit nach der Fehlerfortpflanzungsregel.
 
 ## 🏆 Lizenz
