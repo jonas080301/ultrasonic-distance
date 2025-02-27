@@ -49,7 +49,7 @@ python radar_gui.py
   **d = (t - b) / m**
   
 - Die berechnete Unsicherheit wird ebenfalls angezeigt
-- Die digitale Cockpitanzeige zeigt den gerundeten Abstand (z. B. auf 5 cm)
+- Die digitale Cockpitanzeige zeigt den gerundeten Abstand (auf 5 cm)
 
 ## 📊 Datenformat
 Die Messdaten müssen im CSV-Format vorliegen mit **zwei Headerzeilen**, z. B.:
